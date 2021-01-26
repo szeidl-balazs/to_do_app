@@ -1,11 +1,13 @@
-function Dashboard() {
+function createDashboard() { 
+  const main = document.querySelector('.mainContainer');
 
-   function createDashboard() {
+  main.insertAdjacentHTML('beforeend',`
     
-   } 
+  `);
+}
 
 
-
+function Dashboard() {
   return (
     <div className="dashboard">
       <input placeholder="Untitled dashboard"/>
