@@ -1,12 +1,13 @@
 import './App.css';
-import Dashboard from './components/dashboard/dashboard';
+import CreateDashboard from './components/dashboard/dashboard';
+
 
 function App() {
   return (
     <div className="App">
       <h1>To Do App</h1>
       <div className="mainContainer">
-        <Dashboard />
+        <CreateDashboard />
       </div>
     </div>
   )

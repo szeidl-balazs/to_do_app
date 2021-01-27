@@ -1,20 +1,28 @@
-function createDashboard() { 
-  const main = document.querySelector('.mainContainer');
-
-  main.insertAdjacentHTML('beforeend',`
-    
-  `);
-}
+import React, { useState } from 'react';
+import { v4 as uuidv4 } from 'uuid';
+import Card from '../card/card';
 
 
-function Dashboard() {
-  return (
+const Dashboard = () => {
+  const [list, setlist] = useState([]);
+  return(
     <div className="dashboard">
       <input placeholder="Untitled dashboard"/>
-      <button className="createCard">Create card</button>
-      <button className="plus" onClick={createDashboard}><i className="fas fa-plus"></i></button>
+      <button className="createCard" onClick={() => setlist([...list, <Card key={uuidv4()}/>])}>Create card</button>
+      {list}
     </div>
-  )
+  );
 }
 
-export default Dashboard;
+const CreateDashboard = () => {
+  const [list, setlist] = useState([<Dashboard key={uuidv4()}/>]);
+
+  return(
+    <div>
+      {list}
+      <button className="dashboard" onClick={() => setlist([...list, <Dashboard key={uuidv4()}/>])}>+</button>
+    </div>
+  );
+}
+
+export default CreateDashboard;
