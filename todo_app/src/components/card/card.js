@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 import './card.css';
 
 
-const Card = (props) => {
+const Card = () => {
   const [title, setTitle] = useState("Title")
   let [visibility, setVisibility] = useState("none")
 
-  const deleteCard = (props) => {
-    console.log(props.list);
-  }
+  const deleteCard = (e) => {
+    e.target.parentElement.style.display = "none";
+  };
 
   return(
     <div className="card">

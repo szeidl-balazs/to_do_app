@@ -24,7 +24,9 @@ const CreateDashboard = () => {
   return(
     <div className="wrapper">
       {list}
-      <button className="dashboardButton" onClick={() => setlist([...list, <Dashboard key={uuidv4()}/>])}>+</button>
+      <button className="dashboardButton" onClick={() => setlist([...list, <Dashboard key={uuidv4()}/>])}>
+        +
+      </button>
     </div>
   );
 }
