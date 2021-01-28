@@ -1,1 +1,94 @@
-/* No CSS *//*# sourceMappingURL=dashboard.css.map */
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 7px 10px;
+}
+
+.wrapper .dashboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5px;
+  margin-right: 10px;
+  width: 200px;
+  overflow: hidden;
+}
+
+.wrapper .dashboard .dashboardInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 15px;
+}
+
+.wrapper .dashboard .dashboardInput input {
+  height: 2.5rem;
+  width: 8rem;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.288);
+}
+
+.wrapper .dashboard .dashboardInput input:hover {
+  border: none;
+}
+
+.wrapper .dashboard .dashboardInput input:active {
+  border: none;
+  background: white;
+}
+
+.wrapper .dashboard .dashboardInput input:focus {
+  border: none;
+  outline: none;
+  background: white;
+}
+
+.wrapper .dashboard .dashboardInput .createCard {
+  height: 2.5rem;
+  width: 3.5rem;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-left: 5px;
+  background: #af4c4c;
+  color: white;
+}
+
+.wrapper .dashboard .dashboardInput .createCard:active {
+  border: none;
+  background: #eb7c7c;
+}
+
+.wrapper .dashboard .dashboardInput .createCard:focus {
+  border: none;
+  outline: none;
+}
+
+.dashboardButton {
+  margin-top: 10px;
+  background: #f1c86f;
+  border-radius: 5px;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.dashboardButton:focus {
+  border: none;
+  outline: none;
+}
+/*# sourceMappingURL=dashboard.css.map */

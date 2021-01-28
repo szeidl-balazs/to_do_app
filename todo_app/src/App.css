@@ -1,1 +1,26 @@
-/* No CSS *//*# sourceMappingURL=App.css.map */
+*,
+*::before,
+*:after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(#858b8d), to(#475e66));
+  background: linear-gradient(to bottom, #858b8d, #475e66);
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c9e0e7), to(#73b1c5));
+  background: linear-gradient(to bottom, #c9e0e7, #73b1c5);
+  color: #575656;
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.514);
+  text-align: center;
+  padding: 25px;
+}
+/*# sourceMappingURL=App.css.map */

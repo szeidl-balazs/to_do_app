@@ -1,0 +1,43 @@
+.card {
+  width: 190px;
+  padding: 3px;
+  input {
+    height: 1.5rem;
+    width: 8rem;
+    border-radius: 5px;
+    border: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.288);
+    margin: 5px 0;
+    &:hover {
+      border: none;
+    }
+    &:active {
+      border: none;
+    }
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  .deleteCard {
+    height: 1.5rem;
+    width: 1.5rem;
+    font-size: 12px;
+    border-radius: 5px;
+    margin-left: 5px;
+    background: rgb(175, 76, 76);
+    color: white;
+    &:active {
+      border: none;
+      background: rgb(235, 124, 124);
+    }
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+  .cardInput {
+    background: white;
+  }
+}

@@ -1,0 +1,23 @@
+*,
+*::before,
+*:after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgb(133, 139, 141), rgb(71, 94, 102));
+}
+
+h1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: linear-gradient(to bottom, rgb(201, 224, 231), rgb(115, 177, 197));
+  color: rgb(87, 86, 86);
+  text-shadow: 0 0 7px rgba(0, 0, 0, 0.514);
+  text-align: center;
+  padding: 25px;
+}
+

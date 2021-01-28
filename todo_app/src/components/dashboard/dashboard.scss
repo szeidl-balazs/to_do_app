@@ -1,0 +1,73 @@
+.wrapper {
+	display: flex;
+  padding: 7px 10px;
+  //align-items: center;
+  .dashboard {
+    //background: red;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5px;
+    margin-right: 10px;
+    width: 200px;
+    overflow: hidden;
+    .dashboardInput {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+      input {
+        height: 2.5rem;
+        width: 8rem;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.288);
+        &:hover {
+          border: none;
+        }
+        &:active {
+          border: none;
+          background: white;
+        }
+        &:focus {
+          border: none;
+          outline: none;
+          background: white;
+        }
+      }
+    .createCard {
+      height: 2.5rem;
+      width: 3.5rem;
+      font-size: 12px;
+      border-radius: 5px;
+      margin-left: 5px;
+      background: rgb(175, 76, 76);
+      color: white;
+      &:active {
+        border: none;
+        background: rgb(235, 124, 124);
+      }
+      &:focus {
+        border: none;
+        outline: none;
+      }
+    }
+    }
+  }
+}
+
+.dashboardButton {
+  margin-top: 10px;
+  background: rgb(241, 200, 111);
+  border-radius: 5px;
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  font-size: 25px;
+  font-weight: 700;
+  &:focus {
+    border: none;
+    outline: none;
+  }
+}
+

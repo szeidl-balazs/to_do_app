@@ -1,1 +1,52 @@
-/* No CSS *//*# sourceMappingURL=card.css.map */
+.card {
+  width: 190px;
+  padding: 3px;
+}
+
+.card input {
+  height: 1.5rem;
+  width: 8rem;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.288);
+  margin: 5px 0;
+}
+
+.card input:hover {
+  border: none;
+}
+
+.card input:active {
+  border: none;
+}
+
+.card input:focus {
+  border: none;
+  outline: none;
+}
+
+.card .deleteCard {
+  height: 1.5rem;
+  width: 1.5rem;
+  font-size: 12px;
+  border-radius: 5px;
+  margin-left: 5px;
+  background: #af4c4c;
+  color: white;
+}
+
+.card .deleteCard:active {
+  border: none;
+  background: #eb7c7c;
+}
+
+.card .deleteCard:focus {
+  border: none;
+  outline: none;
+}
+
+.card .cardInput {
+  background: white;
+}
+/*# sourceMappingURL=card.css.map */

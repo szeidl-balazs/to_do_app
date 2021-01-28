@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './card.css';
 
 
 const Card = () => {
@@ -9,14 +10,14 @@ const Card = () => {
       <input type="button" onClick={() => setVisibility(visibility==='none' ? 
         visibility='block' : 'none')} value={title}></input>
 
+      <button className="deleteCard">x</button>
       <div style={{display: visibility}}>
-        <input type="text" onInput={(e) => setTitle(e.target.value)} />
-        <div>
-          <textarea rows={4} cols={50} placeholder="Enter text here..."></textarea>
+        <input className="cardInput" type="text" onInput={(e) => setTitle(e.target.value)} />
+        <div className="textAreaContainer">
+          <textarea rows={4} cols={24} placeholder="Enter text here..."></textarea>
         </div>
       </div>
 
-      <button className="deleteCard">x</button>
     </div>
   );
 }
