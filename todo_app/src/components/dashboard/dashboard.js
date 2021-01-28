@@ -10,7 +10,8 @@ const Dashboard = () => {
     <div className="dashboard">
       <div className="dashboardInput">
         <input placeholder="Untitled dashboard"/>
-        <button className="createCard" onClick={() => setlist([...list, <Card key={uuidv4()}/>])}>Create Card</button>
+        <button className="createCard" onClick={() => setlist([...list, <Card key={uuidv4()} 
+          list={list} setlist={setlist}/>])}>Create Card</button>
       </div>
       {list}
     </div>
